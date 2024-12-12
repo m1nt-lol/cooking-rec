@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cooking Recipes</title>
+    <style>
+        /* General reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f4f9;
+            color: #333;
+            line-height: 1.6;
+            padding: 20px;
+        }
+
+        h1 {
+            text-align: center;
+            font-size: 3rem;
+            color: #ff6347;
+            margin-bottom: 40px;
+        }
+
+        /* Recipe list */
+        .recipe-list {
+            max-width: 800px;
+            margin: 0 auto;
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .recipe-item {
+            background-color: #fff;
+            padding: 20px;
+            margin-bottom: 20px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+
+        .recipe-title {
+            font-size: 1.8rem;
+            font-weight: bold;
+            cursor: pointer;
+            color: #ff6347;
+            margin-bottom: 10px;
+            transition: color 0.3s;
+        }
+
+        .recipe-title:hover {
+            color: #e53e3e;
+        }
+
+        .recipe-details {
+            display: none;
+            font-size: 1.2rem;
+            margin-top: 15px;
+            color: #555;
+        }
+
+        /* Checkbox hack for showing/hiding recipe details */
+        input[type="checkbox"] {
+            display: none;
+        }
+
+        input[type="checkbox"]:checked + .recipe-details {
+            display: block;
+        }
+
+        .recipe-details ul {
+            padding-left: 20px;
+            list-style-type: disc;
+        }
+
+        .recipe-details ul li {
+            margin: 5px 0;
+        }
+
+        .recipe-footer {
+            text-align: center;
+            margin-top: 40px;
+            font-size: 1rem;
+            color: #666;
+        }
+
+        .recipe-footer a {
+            text-decoration: none;
+            color: #ff6347;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Cooking Recipes</h1>
+
+    <ul class="recipe-list">
+
+        <!-- Recipe 1 -->
+        <li class="recipe-item">
+            <label class="recipe-title" for="recipe1">Spaghetti Carbonara</label>
+            <input type="checkbox" id="recipe1">
+            <div class="recipe-details">
+                <p><strong>Ingredients:</strong></p>
+                <ul>
+                    <li>200g spaghetti</li>
+                    <li>100g pancetta</li>
+                    <li>2 large eggs</li>
+                    <li>50g Parmesan cheese</li>
+                    <li>Salt and pepper</li>
+                </ul>
+                <p><strong>Instructions:</strong></p>
+                <p>1. Cook spaghetti according to package directions. Drain, reserving a cup of pasta water.</p>
+                <p>2. In a pan, cook pancetta until crispy.</p>
+                <p>3. Beat eggs and mix with Parmesan cheese. Add cooked pasta and pancetta to the egg mixture and toss quickly.</p>
+                <p>4. Add pasta water to achieve a creamy texture. Season with salt and pepper. Serve hot.</p>
+            </div>
+        </li>
+
+        <!-- Recipe 2 -->
+        <li class="recipe-item">
+            <label class="recipe-title" for="recipe2">Chicken Alfredo</label>
+            <input type="checkbox" id="recipe2">
+            <div class="recipe-details">
+                <p><strong>Ingredients:</strong></p>
+                <ul>
+                    <li>2 chicken breasts</li>
+                    <li>200g fettuccine pasta</li>
+                    <li>2 cloves garlic, minced</li>
+                    <li>100ml heavy cream</li>
+                    <li>50g Parmesan cheese</li>
+                    <li>Salt and pepper</li>
+                </ul>
+                <p><strong>Instructions:</strong></p>
+                <p>1. Cook the pasta according to the package directions.</p>
+                <p>2. Cook chicken breasts in a skillet, then slice them thinly.</p>
+                <p>3. In the same skillet, sauté garlic, add heavy cream, and bring to a simmer.</p>
+                <p>4. Mix in the Parmesan cheese and season with salt and pepper. Add pasta and chicken to the sauce, and toss to coat.</p>
+            </div>
+        </li>
+
+        <!-- Recipe 3 -->
+        <li class="recipe-item">
+            <label class="recipe-title" for="recipe3">Veggie Stir-Fry</label>
+            <input type="checkbox" id="recipe3">
+            <div class="recipe-details">
+                <p><strong>Ingredients:</strong></p>
+                <ul>
+                    <li>1 cup broccoli florets</li>
+                    <li>1 bell pepper, sliced</li>
+                    <li>1 carrot, sliced</li>
+                    <li>2 tbsp soy sauce</li>
+                    <li>1 tbsp sesame oil</li>
+                </ul>
+                <p><strong>Instructions:</strong></p>
+                <p>1. Heat sesame oil in a wok over medium heat. Add vegetables and stir-fry for 5-7 minutes until tender-crisp.</p>
+                <p>2. Add soy sauce and toss to coat the vegetables.</p>
+                <p>3. Serve hot with rice or noodles.</p>
+            </div>
+        </li>
+
+    </ul>
+
+    <div class="recipe-footer">
+        <p>Want more recipes? <a href="#">Visit our recipe collection</a></p>
+    </div>
+
+</body>
+</html>
